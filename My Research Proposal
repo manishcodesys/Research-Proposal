@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research Proposal - Manish Meena</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.7;
+            margin: 40px;
+            max-width: 900px;
+        }
+
+        /* WATERMARK */
+        body::before {
+            content: "DO NOT COPY";
+            position: fixed;
+            top: 40%;
+            left: 20%;
+            font-size: 80px;
+            color: rgba(0,0,0,0.05);
+            transform: rotate(-30deg);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        h1, h2 {
+            color: #222;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Short-Term Incentives and Strategic Distortion</h1>
+
+<p class="meta">
+Manish Meena<br>
+Indian School of Business Hyderabad | IIT Gandhinagar | Loughborough University
+</p>
+
+<div class="section">
+<h2>Abstract</h2>
+<p>
+This study investigates how short-term performance incentives shape micro-level decision-making...
+</p>
+</div>
+
+<div class="section">
+<h2>Introduction</h2>
+<p>
+Modern organizations frequently rely on short-term, performance-based evaluation systems...
+</p>
+</div>
+
+<div class="section">
+<h2>Theoretical Framework</h2>
+<p>
+The analysis is grounded in multi-tasking theory and career concerns models...
+</p>
+</div>
+
+<div class="section">
+<h2>Research Questions</h2>
+<p>
+This study addresses whether short-term incentives causally affect decision-making...
+</p>
+</div>
+
+<div class="section">
+<h2>Empirical Strategy</h2>
+<p>
+The empirical design exploits variation in contract timing and milestone thresholds...
+</p>
+</div>
+
+<div class="section">
+<h2>Econometric Model</h2>
+<p>
+Intent<sub>ibt</sub> = β₁ ContractYear<sub>it</sub> + controls + fixed effects
+</p>
+</div>
+
+<div class="section">
+<h2>Expected Contribution</h2>
+<p>
+This study provides micro-level evidence on incentive distortions...
+</p>
+</div>
+
+<div class="section">
+<h2>Feedback</h2>
+<p>
+This is a working research proposal. Feedback on methodology, econometrics, and positioning is welcome.
+</p>
+</div>
+
+</body>
+</html>
