@@ -1,105 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Research Proposal - Manish Meena</title>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            line-height: 1.7;
-            margin: 40px;
-            max-width: 900px;
-        }
+<meta charset="UTF-8">
+<title>Research Proposal | Manish Meena</title>
 
-        /* WATERMARK */
-        body::before {
-            content: "DO NOT COPY";
-            position: fixed;
-            top: 40%;
-            left: 20%;
-            font-size: 80px;
-            color: rgba(0,0,0,0.05);
-            transform: rotate(-30deg);
-            z-index: -1;
-            pointer-events: none;
-        }
+<!-- MathJax for equations -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-        h1, h2 {
-            color: #222;
-        }
+<style>
+body {
+    font-family: Georgia, serif;
+    line-height: 1.8;
+    margin: 40px auto;
+    max-width: 900px;
+}
 
-        .section {
-            margin-bottom: 40px;
-        }
+/* WATERMARK */
+body::before {
+    content: "DO NOT COPY";
+    position: fixed;
+    top: 40%;
+    left: 10%;
+    font-size: 100px;
+    color: rgba(0,0,0,0.05);
+    transform: rotate(-30deg);
+    z-index: -1;
+}
 
-        .meta {
-            font-size: 14px;
-            color: gray;
-        }
-    </style>
+h1, h2 {
+    color: #111;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+</style>
 </head>
 
 <body>
 
 <h1>Short-Term Incentives and Strategic Distortion</h1>
 
-<p class="meta">
-Manish Meena<br>
+<p>
+<b>Manish Meena</b><br>
 Indian School of Business Hyderabad | IIT Gandhinagar | Loughborough University
 </p>
 
 <div class="section">
 <h2>Abstract</h2>
 <p>
-This study investigates how short-term performance incentives shape micro-level decision-making...
+This study investigates how short-term performance incentives shape micro-level decision-making and generate inefficiencies through distorted effort allocation. Leveraging ball-by-ball IPL data (2008–2025), the study constructs probabilistic measures of intent and context-adjusted expected performance.
 </p>
 </div>
 
 <div class="section">
 <h2>Introduction</h2>
 <p>
-Modern organizations frequently rely on short-term, performance-based evaluation systems...
+Modern organizations rely on short-term performance metrics, which may distort behavior toward visible outcomes rather than optimal decisions. This study uses IPL as a high-frequency decision environment.
 </p>
 </div>
 
 <div class="section">
 <h2>Theoretical Framework</h2>
 <p>
-The analysis is grounded in multi-tasking theory and career concerns models...
+Grounded in multi-tasking theory and career concerns, agents prioritize observable outputs, leading to inefficient effort allocation and excessive risk-taking.
 </p>
 </div>
 
 <div class="section">
 <h2>Research Questions</h2>
 <p>
-This study addresses whether short-term incentives causally affect decision-making...
+1. Do short-term incentives affect micro-level decision-making?<br>
+2. Do such behaviors reduce aggregate efficiency?
 </p>
 </div>
 
 <div class="section">
 <h2>Empirical Strategy</h2>
-<p>
-The empirical design exploits variation in contract timing and milestone thresholds...
-</p>
+
+<p>Expected runs model:</p>
+
+\[
+E(Runs_{ibt} | Context_{bt}) = f(Context_{bt})
+\]
+
+<p>Residual definition:</p>
+
+\[
+Residual_{ibt} = Runs_{ibt} - E(Runs_{ibt} | Context_{bt})
+\]
+
+<p>Decomposition:</p>
+
+\[
+Residual^+ = max(Residual, 0), \quad Residual^- = min(Residual, 0)
+\]
+
 </div>
 
 <div class="section">
-<h2>Econometric Model</h2>
-<p>
-Intent<sub>ibt</sub> = β₁ ContractYear<sub>it</sub> + controls + fixed effects
-</p>
+<h2>Intent Model</h2>
+
+\[
+Intent_{ibt} = P(AggressiveAction | Outcome_{ibt}, Context_{bt})
+\]
+
+</div>
+
+<div class="section">
+<h2>Fixed Effects Model</h2>
+
+\[
+Intent_{ibt} = \beta_1 ContractYear_{it} + \beta_2 X_{ibt} + \alpha_i + \gamma_t + \epsilon_{ibt}
+\]
+
+</div>
+
+<div class="section">
+<h2>Regression Discontinuity Design</h2>
+
+\[
+Intent_{ibt} = \alpha + \tau \cdot 1(Score_{it} \geq 50) + f(Score_{it}) + \epsilon_{ibt}
+\]
+
+</div>
+
+<div class="section">
+<h2>Aggregate Outcome Model</h2>
+
+\[
+WPA_{ibt} = \delta \cdot Incentive_{ibt} + \beta X_{ibt} + \epsilon_{ibt}
+\]
+
 </div>
 
 <div class="section">
 <h2>Expected Contribution</h2>
 <p>
-This study provides micro-level evidence on incentive distortions...
+Provides micro-level causal evidence on incentive distortion and introduces a probabilistic intent framework.
+</p>
+</div>
+
+<div class="section">
+<h2>Conclusion</h2>
+<p>
+The study highlights how observable performance metrics can distort decision-making and reduce efficiency.
 </p>
 </div>
 
 <div class="section">
 <h2>Feedback</h2>
 <p>
-This is a working research proposal. Feedback on methodology, econometrics, and positioning is welcome.
+This is a working research proposal. Feedback on econometrics, identification strategy, and positioning is highly welcome.
 </p>
 </div>
 
